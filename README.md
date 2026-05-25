@@ -1,96 +1,149 @@
 # Titanic
 
-🚢 Titanic Data Analysis using SQL
+---
 
-📊 End-to-End Data Cleaning & Insight Generation
+## 🚀 Project Overview  
+This project explores the **Titanic dataset** using SQL Server, focusing on transforming raw data into meaningful insights.
 
-📌 Project Overview
+✨ It demonstrates:
+- Real-world **data cleaning techniques**
+- Handling **missing & inconsistent data**
+- Extracting **business-driven insights**
 
-This project focuses on analyzing the famous Titanic dataset using SQL Server.
-It demonstrates how to clean raw data, handle missing values, and extract meaningful insights using SQL queries.
+---
 
-🧠 Objectives
-Perform data cleaning & preprocessing
-Handle null values and duplicates
-Generate business insights using SQL
-Practice real-world data analysis techniques
-🗂️ Dataset Information
+## 🎯 Objectives  
 
-The dataset contains passenger details such as:
+✔️ Clean raw dataset  
+✔️ Handle null values & duplicates  
+✔️ Perform exploratory data analysis (EDA)  
+✔️ Generate actionable insights using SQL  
 
-PassengerId
-Name
-Age
-Gender (Sex)
-Ticket details
-Fare
-Cabin
-Survival status
-⚙️ Steps Performed
-🔹 1. Database Setup
-Created database: TITANIC
-Loaded dataset into TITANIC_DATASET
-🔹 2. Data Cleaning
+---
 
-✔️ Checked null values in all columns
-✔️ Identified duplicate records (Name & Ticket)
-✔️ Removed extra spaces using TRIM()
-✔️ Handled missing values:
+## 🗃️ Dataset Features  
 
-Age → replaced with average age
-Cabin, Embarked → replaced with 'Not Defined'
-🔹 3. Data Analysis & Insights
-📊 Passenger Insights
-Total passengers count
-Survived vs Unsurvived passengers
-Gender-wise survival analysis
-👨‍👩‍👧 Demographic Analysis
-Survival based on Age groups
-Passenger class (Pclass) distribution
-Gender distribution across classes
-👪 Family Analysis
-Passengers traveling with siblings/spouses (SibSp)
-Passengers traveling with parents/children (Parch)
-💰 Fare Analysis
-Average fare
-Minimum & Maximum fare
-Total fare collected
-Fare distribution by gender
-📍 Embarkation Analysis
-Passenger count by embarkation point
-📈 Key Insights
-👩 Females had a higher survival rate than males
-🎟️ Passengers in 1st class had better survival chances
-👶 Children (Age ≤ 10) showed higher survival probability
-💸 Higher fare passengers were more likely to survive
-🛠️ SQL Concepts Used
-GROUP BY, HAVING
-CASE WHEN
-Aggregate functions (COUNT, AVG, SUM, MIN, MAX)
-Data cleaning functions (TRIM)
-Subqueries
-Transactions (BEGIN TRANSACTION)
-🚀 How to Use
-Clone this repository
-Open SQL Server Management Studio (SSMS)
-Run the SQL script
-Explore insights using queries
-💡 Future Improvements
-Create views for reusable insights
-Build stored procedures
-Connect with Power BI / Tableau dashboard
-Apply advanced analytics (ML models)
-👨‍💻 Author
+| Column        | Description |
+|--------------|------------|
+| PassengerId  | Unique ID |
+| Name         | Passenger Name |
+| Sex          | Gender |
+| Age          | Age |
+| Pclass       | Ticket Class |
+| Fare         | Ticket Price |
+| Cabin        | Cabin Number |
+| Embarked     | Boarding Port |
+| Survived     | Survival Status |
 
-Anshu Das
-📊 Data Analyst | SQL Enthusiast
+---
 
-⭐ Support
+## ⚙️ Workflow  
 
-If you like this project, don’t forget to star ⭐ the repo and share!
+```mermaid
+graph LR
+A[Raw Dataset] --> B[Data Cleaning]
+B --> C[Handling Null Values]
+C --> D[Data Analysis]
+D --> E[Insights & Reporting]
+```
 
-If you want, I can also:
+---
 
-Add badges (GitHub style)
-Make it more colorful with icons & design
-Or create a LinkedIn post for this project 🚀
+## 🧹 Data Cleaning  
+
+🔍 Checked missing values in all columns  
+🧾 Detected duplicate records  
+✂️ Removed extra spaces using TRIM()  
+
+### 🔧 Null Handling Strategy  
+- Age → Replaced with **Average Age**  
+- Cabin → 'Not Defined'  
+- Embarked → 'Not Defined'  
+
+---
+
+## 📊 Exploratory Data Analysis  
+
+### 👥 Passenger Insights  
+- Total passengers  
+- Survival distribution  
+- Gender-based survival  
+
+### 🧑‍🤝‍🧑 Demographics  
+- Age group survival trends  
+- Class-wise distribution  
+- Gender vs Class analysis  
+
+### 👨‍👩‍👧 Family Analysis  
+- SibSp (siblings/spouses)  
+- Parch (parents/children)  
+
+### 💰 Fare Analysis  
+- Average, Min, Max fare  
+- Total revenue  
+- Fare by gender  
+
+### 🌍 Location Insights  
+- Embarkation distribution  
+
+---
+
+## 📈 Key Insights  
+
+✨ Females had significantly higher survival rates  
+✨ 1st class passengers survived more  
+✨ Children (≤10 age) had better survival chances  
+✨ Higher fare = higher survival probability  
+
+---
+
+## 🛠️ SQL Skills Demonstrated  
+
+```sql
+✔ GROUP BY & HAVING
+✔ CASE WHEN
+✔ Aggregate Functions
+✔ Data Cleaning Functions
+✔ Subqueries
+✔ Transactions
+```
+
+---
+
+## 💻 How to Run  
+
+```bash
+1. Clone the repository
+2. Open SQL Server (SSMS)
+3. Run the SQL script
+4. Analyze results
+```
+
+---
+
+## 🔮 Future Enhancements  
+
+🚀 Power BI Dashboard  
+🚀 Stored Procedures  
+🚀 Views for reporting  
+🚀 Machine Learning Model  
+
+---
+
+## 👨‍💻 Author  
+
+**Anshu Das**  
+📊 Data Analyst | SQL Enthusiast  
+
+---
+
+## ⭐ Show Your Support  
+
+If you like this project:  
+👉 Star ⭐ this repository  
+👉 Share it on LinkedIn  
+👉 Follow for more projects  
+
+---
+
+<p align="center">🔥 "Turning Data into Decisions" 🔥</p>
